@@ -1,0 +1,14 @@
+2024/11/20-11:16:25.591 8103 Reusing MANIFEST /Users/josphatndhlovu/Documents/MOZZARTLABS/kiwabot/.wwebjs_auth/session/Default/Local Storage/leveldb/MANIFEST-000001
+2024/11/20-11:16:25.591 8103 Recovering log #13
+2024/11/20-11:16:25.593 8103 Reusing old log /Users/josphatndhlovu/Documents/MOZZARTLABS/kiwabot/.wwebjs_auth/session/Default/Local Storage/leveldb/000013.log 
+2024/11/20-11:18:26.575 1f003 Level-0 table #17: started
+2024/11/20-11:18:26.604 1f003 Level-0 table #17: 14780 bytes OK
+2024/11/20-11:18:26.649 1f003 Delete type=0 #13
+2024/11/20-11:18:26.653 1f003 Compacting 4@0 + 0@1 files
+2024/11/20-11:18:26.680 1f003 Generated table #18@0: 154 keys, 5086 bytes
+2024/11/20-11:18:26.680 1f003 Compacted 4@0 + 0@1 files => 5086 bytes
+2024/11/20-11:18:26.722 1f003 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/11/20-11:18:26.723 1f003 Delete type=2 #14
+2024/11/20-11:18:26.723 1f003 Delete type=2 #17
+2024/11/20-11:18:26.723 1f003 Delete type=2 #7
+2024/11/20-11:18:26.723 1f003 Delete type=2 #11
