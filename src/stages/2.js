@@ -3,8 +3,8 @@ import axios from 'axios';
 import { menu } from '../menu.js';
 import { storage } from '../storage.js';
 
-const url = "https://api.edenai.run/v2/workflow/ae8723f2-d037-40b0-ac81-00b24617b384/execution/"
-const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMWNjMmMwOWQtZmVkNS00OWQ5LWFkZGEtNzQ4MGM1MDEwNzUxIiwidHlwZSI6ImFwaV90b2tlbiJ9.bqh1TJ4Miik7RthIy7iuX6RHNIOK6QBxRiXQnAJP5R4'
+const url = ""
+
 
 export const two = {
   async exec({ from, message }) {
@@ -34,7 +34,7 @@ function generateRecipe(ingredients) {
   return axios.post(url, payload, {
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMWNjMmMwOWQtZmVkNS00OWQ5LWFkZGEtNzQ4MGM1MDEwNzUxIiwidHlwZSI6ImFwaV90b2tlbiJ9.bqh1TJ4Miik7RthIy7iuX6RHNIOK6QBxRiXQnAJP5R4"
+      "Authorization": "Bearer --"
     }
   })
     .then(response => {
@@ -61,7 +61,7 @@ function pollStatus(resultId) {
         axios.get(`${url}${resultId}/`, {
           headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMWNjMmMwOWQtZmVkNS00OWQ5LWFkZGEtNzQ4MGM1MDEwNzUxIiwidHlwZSI6ImFwaV90b2tlbiJ9.bqh1TJ4Miik7RthIy7iuX6RHNIOK6QBxRiXQnAJP5R4"
+            "Authorization": "Bearer --"
           }
         })
           .then(res => {

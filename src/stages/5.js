@@ -2,7 +2,7 @@ import axios from 'axios';
 import { menu } from '../menu.js';
 import { storage } from '../storage.js';
 
-const url = "https://api.edenai.run/v2/workflow/ae8723f2-d037-40b0-ac81-00b24617b384/execution/"
+const url = ""
 
 export const five = {
     async exec({ from, message }) {
@@ -31,7 +31,7 @@ async function suggestLeftoverIdeas(leftovers) {
         const response = await axios.post(url, payload, {
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMWNjMmMwOWQtZmVkNS00OWQ5LWFkZGEtNzQ4MGM1MDEwNzUxIiwidHlwZSI6ImFwaV90b2tlbiJ9.bqh1TJ4Miik7RthIy7iuX6RHNIOK6QBxRiXQnAJP5R4"
+                "Authorization": "Bearer --"
             }
         });
         // Step 2: Extract the ID from the response
@@ -54,7 +54,7 @@ function pollStatus(resultId) {
                 axios.get(`${url}${resultId}/`, {
                     headers: {
                         "Content-Type": "application/json",
-                        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMWNjMmMwOWQtZmVkNS00OWQ5LWFkZGEtNzQ4MGM1MDEwNzUxIiwidHlwZSI6ImFwaV90b2tlbiJ9.bqh1TJ4Miik7RthIy7iuX6RHNIOK6QBxRiXQnAJP5R4"
+                        "Authorization": "Bearer --"
                     }
                 })
                     .then(res => {
