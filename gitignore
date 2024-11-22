@@ -18,4 +18,4 @@ node_modules
 dist
 build
 .wwebjs_auth
-.wwebjs_cashe
+.wwebjs_cache

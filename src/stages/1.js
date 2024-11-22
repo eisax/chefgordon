@@ -6,12 +6,12 @@ export const one = {
     if (message === '1') {
       storage[from].stage = 0;
 
-      return '🍴 Today\'s Menu:\n1. Creamy Mushroom Risotto 🍄\n2. Grilled Lemon Chicken 🍋\n3. Vegan Buddha Bowl 🌱\n\nReply with the dish number for step-by-step instructions or type "More" for additional options!';
+      return '🍴Upcoming Today\'s Menu:\n1. Creamy Mushroom Risotto 🍄\n2. Grilled Lemon Chicken 🍋\n3. Vegan Buddha Bowl 🌱\n\nReply with the dish number for step-by-step instructions or type "More" for additional options!';
     } else if (message === '2') {
       storage[from].stage = 0;
 
       return (
-        '📅 Let\'s schedule your cooking session!\nReply with a date and time (e.g., "Tomorrow at 7 PM"), and I’ll confirm your slot.'
+        '📅🍴Upcoming Let\'s schedule your cooking session!\nReply with a date and time (e.g., "Tomorrow at 7 PM"), and I’ll confirm your slot.'
       );
 
     } else if (message === '3') {
@@ -59,7 +59,7 @@ export const one = {
     else if (message === '9') {
       storage[from].stage = 0;
       return (
-        '📸 Please upload an image of the ingredients you have, and I’ll identify them and suggest recipes!'
+        '📸🍴Upcoming Please upload an image of the ingredients you have, and I’ll identify them and suggest recipes!'
       );
     }
 
